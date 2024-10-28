@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Stile generale */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Contenitore dei progetti */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: calc(50% - 10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .project h3 {
+            font-size: 1.5em;
+            color: #2c3e50;
+        }
+        .project p {
+            color: #666;
+            line-height: 1.5;
+        }
+        .project a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stile per schermi piccoli */
+        @media (max-width: 768px) {
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Il Mio Portfolio</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.</p>
+    </header>
+
+    <div class="container">
+        <div class="project">
+            <h3>Progetto 1: Analisi del Clustering</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac pulvinar elit, non bibendum metus.</p>
+            <a href="https://github.com/tuo-username/clustering-analysis" target="_blank">Visualizza su GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>Progetto 2: Predizione Formula 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet lacus urna. Praesent tincidunt sapien vitae venenatis volutpat.</p>
+            <a href="https://github.com/tuo-username/f1-prediction" target="_blank">Visualizza su GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>Progetto 3: Predizione Prezzo Azioni</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum eros a neque sollicitudin, et ullamcorper magna luctus.</p>
+            <a href="https://github.com/tuo-username/LSTM-StockPricePrediction" target="_blank">Visualizza su GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>Progetto 4: Modello di Distribuzione Pioggia</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing e
